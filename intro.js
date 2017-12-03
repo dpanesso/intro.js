@@ -1190,7 +1190,7 @@
       var helperNumberLayer = document.createElement('span');
       if (this._options.showStepNumbers === true) {
         helperNumberLayer.className = 'introjs-helperNumberLayer';
-        helperNumberLayer.innerHTML = targetElement.step;
+        helperNumberLayer.innerHTML = targetElement.displayStep || targetElement.step;
         referenceLayer.appendChild(helperNumberLayer);
       }
 
